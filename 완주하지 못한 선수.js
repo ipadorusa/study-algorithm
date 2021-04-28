@@ -1,14 +1,16 @@
-const solution = (participant, completion) => {
-    participant.sort();
-    completion.sort();
-    while(participant.length) {
-        let participants = participant.pop();
-        if(participants !== completion.pop()) {
-            return participants;
+function solution(participant, completion) {
+    let n = completion.reduce((acc, cur) => {
+        return acc[cur] = acc[cur] ? acc[cur] + 1 : 1, acc
+    }, {});
+    return participant.find(val => {
+        if(n[val]) {
+            n[val] = n[val] - 1
+        }else {
+            return true
         }
-    }
+    })
 }
-let participant = ['filipa', 'josipa', 'marina', 'nikola', 'vinko'];
-let completion = ['filipa','josipa', 'marina', 'nikola', 'vinko', 'vinko'];
 
+let participant = ["leo", "kiki", "eden"];
+let completion = ["eden", "kiki"]
 solution(participant, completion);
