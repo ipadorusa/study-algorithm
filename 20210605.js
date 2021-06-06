@@ -40,3 +40,22 @@ function compareTriplets(a, b) {
 }
 
 compareTriplets([17, 28, 30], [99, 16, 8]);
+
+function diagonalDifference(arr) {
+  // Write your code here
+  let sum = 0;
+  let sum2 = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i][i];
+    sum2 += arr[i][arr.length - i - 1];
+  }
+  return sum - sum2 > 0 ? sum - sum2 : (sum - sum2) * -1;
+}
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [9, 8, 9],
+];
+diagonalDifference(arr);
