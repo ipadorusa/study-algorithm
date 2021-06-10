@@ -1,7 +1,7 @@
-function h(obj, target) {
+function h(obj, propsName) {
   let answer = '';
   for (let x in obj) {
-    if (x === target) {
+    if (x === propsName) {
       answer = obj[x];
     }
   }
@@ -15,4 +15,4 @@ const obj = {
 };
 const PropsTarget = 'foot';
 
-h(obj, target);
+h(obj, propsName);
