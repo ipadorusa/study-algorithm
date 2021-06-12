@@ -13,7 +13,7 @@ function timeConversion(s) {
   }
   return time.replace(timeArr?.groups?.first, first).replace(timeArr?.groups?.noon, '');
 }
-let time = '12:05:45AM';
+let time = '07:05:45PM';
 timeConversion(time);
 
 /**
