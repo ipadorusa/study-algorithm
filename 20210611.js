@@ -9,3 +9,7 @@ function birthdayCakeCandles(candles) {
 }
 let arr = [1, 3, 4, 4];
 birthdayCakeCandles(arr);
+
+/**
+ * https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+ */
