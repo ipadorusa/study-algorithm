@@ -1,4 +1,4 @@
-function solution(arr) {
+function plusMinus(arr) {
   let plus = 0;
   let minus = 0;
   let zero = 0;
@@ -15,6 +15,6 @@ function solution(arr) {
 }
 
 let arr = [-4, 3, -9, 0, 4, 1];
-solution(arr);
+function plusMinus(arr);
 
 //https://www.hackerrank.com/challenges/plus-minus/problem
